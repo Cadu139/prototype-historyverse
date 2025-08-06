@@ -14,7 +14,7 @@ body {
 .vertical-bar{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     min-width: 50px;
     width: 0;
     height: 100%;
@@ -22,18 +22,19 @@ body {
     margin: 0;
     padding: 0;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 .vertical-bar:hover{
-    width: 250px;
+    width: 200px;
 }
 
 .list-bar {
     display: flex;
+    margin: 10px 0;
     width: 100%;
     flex-direction: column;
     list-style-type: none;
-    margin: 10px 0;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -47,6 +48,7 @@ body {
     padding: 5px 0;
     transition: 0.1s;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .item-bar a {
@@ -56,7 +58,6 @@ body {
     margin: 10px 0;
     margin-left: 50px;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .item-bar ion-icon {
@@ -68,4 +69,33 @@ body {
 
 .item-bar:hover{
     background-color: lightgreen;
+}
+
+.contact {
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: right;
+    margin-right: 0;
+    padding: 0;
+}
+
+.item-contact {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.item-contact a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.item-contact a:hover {
+    font-size: 110%;
+    color: green;
 }
